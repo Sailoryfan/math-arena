@@ -92,6 +92,44 @@ function getDayLabel(dateStr: string): string {
   return `${d.getMonth() + 1}/${d.getDate()}`
 }
 
+const trendRange = ref<'7d' | '30d'>('7d')
+
+const trendData = computed(() => {
+  const days = trendRange.value === '7d' ? dataStore.last7Days : dataStore.last30Days
+  return days.map(d => ({
+    date: d.date,
+    count: d.answered,
+    accuracy: d.answered > 0 ? Math.round((d.correct / d.answered) * 100) : 0,
+  }))
+})
+
+function barHeight(count: number): number {
+  const max = Math.max(...trendData.value.map(d => d.count), 1)
+  return count > 0 ? Math.max(8, (count / max) * 100) : 0
+}
+
+function trendPointX(i: number): number {
+  const n = trendData.value.length
+  const spacing = n > 1 ? 260 / (n - 1) : 0
+  return 30 + i * spacing
+}
+
+function trendPointY(accuracy: number): number {
+  return 100 - (accuracy / 100) * 90
+}
+
+const trendLinePoints = computed(() =>
+  trendData.value.map((d, i) => `${trendPointX(i)},${trendPointY(d.accuracy)}`).join(' ')
+)
+
+const trendLinePath = computed(() => {
+  const pts = trendData.value.map((d, i) => `${trendPointX(i)},${trendPointY(d.accuracy)}`)
+  if (pts.length === 0) return ''
+  const first = pts[0]
+  const lastX = trendPointX(trendData.value.length - 1)
+  return `M${first} L${pts.slice(1).join(' L')} L${lastX},100 L${trendPointX(0)},100 Z`
+})
+
 function goBack() {
   router.push('/my')
 }
@@ -218,7 +256,47 @@ function goBack() {
     </div>
 
     <div v-if="activeTab === 'trend'" class="tab-content">
-      <!-- Task 3 will fill this -->
+      <div class="section-card">
+        <div class="section-title">
+          <span>📈 答题趋势</span>
+          <div class="range-toggle">
+            <button class="range-btn" :class="{ active: trendRange === '7d' }" @click="trendRange = '7d'">7天</button>
+            <button class="range-btn" :class="{ active: trendRange === '30d' }" @click="trendRange = '30d'">30天</button>
+          </div>
+        </div>
+        <div class="chart-area">
+          <div class="bar-chart">
+            <div v-for="(day, i) in trendData" :key="i" class="bar-column">
+              <div class="bar-value">{{ day.count > 0 ? day.count : '' }}</div>
+              <div class="bar" :style="{ height: barHeight(day.count) + '%' }"></div>
+              <div class="bar-label">{{ day.date.slice(5) }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <div class="section-title">🎯 正确率趋势</div>
+        <div class="chart-area">
+          <svg viewBox="0 0 300 120" class="trend-svg">
+            <line x1="30" y1="10" x2="30" y2="100" stroke="rgba(255,255,255,0.1)" />
+            <line x1="30" y1="100" x2="290" y2="100" stroke="rgba(255,255,255,0.1)" />
+            <line x1="30" y1="55" x2="290" y2="55" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+            <text x="5" y="15" fill="rgba(255,255,255,0.3)" font-size="8">100</text>
+            <text x="10" y="58" fill="rgba(255,255,255,0.3)" font-size="8">50</text>
+            <text x="15" y="103" fill="rgba(255,255,255,0.3)" font-size="8">0</text>
+            <defs>
+              <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#bb86fc" stop-opacity="0.4" />
+                <stop offset="100%" stop-color="#bb86fc" stop-opacity="0.02" />
+              </linearGradient>
+            </defs>
+            <path :d="trendLinePath" fill="url(#lineGrad)" opacity="0.3" />
+            <polyline :points="trendLinePoints" fill="none" stroke="#bb86fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <circle v-for="(d, i) in trendData" :key="i" :cx="trendPointX(i)" :cy="trendPointY(d.accuracy)" r="3.5" :fill="d.accuracy >= 80 ? '#2ed573' : d.accuracy >= 60 ? '#ffd700' : '#ff4757'" stroke="#0f1923" stroke-width="1.5" />
+          </svg>
+        </div>
+      </div>
     </div>
 
     <div v-if="activeTab === 'knowledge'" class="tab-content">
@@ -535,5 +613,76 @@ function goBack() {
 .legend-label {
   color: rgba(255,255,255,0.4);
   font-size: 10px;
+}
+
+/* Trend tab */
+.range-toggle {
+  display: flex;
+  gap: 4px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.range-btn {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: rgba(255,255,255,0.4);
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.range-btn.active {
+  background: rgba(187,134,252,0.2);
+  color: #bb86fc;
+}
+
+.chart-area {
+  padding: 8px 0;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 150px;
+  gap: 8px;
+}
+
+.bar-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.bar-value {
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.bar {
+  width: 100%;
+  background: linear-gradient(180deg, #bb86fc, #6200ea);
+  border-radius: 4px 4px 0 0;
+  min-height: 0;
+  transition: height 0.3s;
+}
+
+.bar-label {
+  color: rgba(255,255,255,0.4);
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+.trend-svg {
+  width: 100%;
+  height: auto;
 }
 </style>
