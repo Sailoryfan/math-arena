@@ -393,7 +393,34 @@ function goBack() {
     </div>
 
     <div v-if="activeTab === 'errors'" class="tab-content">
-      <!-- Task 6 will fill this -->
+      <div class="section-card">
+        <div class="section-title">❌ 错题统计</div>
+        <div class="error-summary">
+          <div class="error-stat">
+            <div class="error-value" style="color:#ff4757">{{ dataStore.overallStats.errorCount }}</div>
+            <div class="error-label">待复习错题</div>
+          </div>
+          <div class="error-stat">
+            <div class="error-value" style="color:#2ed573">{{ Object.values(practiceStore.errorBook).filter(e => e.mastered).length }}</div>
+            <div class="error-label">已掌握</div>
+          </div>
+        </div>
+        <button class="action-btn" @click="router.push('/errors')">📖 进入错题本</button>
+      </div>
+
+      <div class="section-card">
+        <div class="section-title">分布</div>
+        <div v-if="dataStore.knowledgePointStats.length === 0" class="empty-hint">暂无错误数据</div>
+        <div v-else class="error-dist">
+          <div v-for="kp in dataStore.knowledgePointStats.filter(k => k.total - k.correct > 0).slice(0, 8)" :key="kp.id" class="error-dist-item">
+            <span class="ed-name">{{ getKpLabel(kp.id) }}</span>
+            <span class="ed-count">{{ kp.total - k.correct }}错</span>
+            <div class="ed-bar">
+              <div class="ed-bar-fill" :style="{ width: ((kp.total - k.correct) / kp.total * 100) + '%' }"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bottom nav -->
@@ -931,5 +958,95 @@ function goBack() {
   color: rgba(255,255,255,0.7);
   font-size: 13px;
   line-height: 1.4;
+}
+
+/* Error tab */
+.error-summary {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.error-stat {
+  flex: 1;
+  text-align: center;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 16px 12px;
+}
+
+.error-value { font-size: 32px; font-weight: bold; }
+.error-label { color: rgba(255,255,255,0.45); font-size: 11px; margin-top: 4px; }
+
+.action-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(187,134,252,0.3);
+  border-radius: 10px;
+  background: rgba(187,134,252,0.08);
+  color: #bb86fc;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background: rgba(187,134,252,0.15);
+  border-color: #bb86fc;
+}
+
+.error-dist {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-dist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ed-name {
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+  width: 60px;
+}
+
+.ed-count {
+  color: #ff4757;
+  font-size: 11px;
+  width: 30px;
+}
+
+.ed-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.ed-bar-fill {
+  height: 100%;
+  background: #ff4757;
+  border-radius: 3px;
+}
+
+/* Staggered card animation */
+.section-card {
+  animation: cardIn 0.35s ease backwards;
+}
+
+.section-card:nth-child(1) { animation-delay: 0.03s; }
+.section-card:nth-child(2) { animation-delay: 0.06s; }
+.section-card:nth-child(3) { animation-delay: 0.09s; }
+.section-card:nth-child(4) { animation-delay: 0.12s; }
+.section-card:nth-child(5) { animation-delay: 0.15s; }
+
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
