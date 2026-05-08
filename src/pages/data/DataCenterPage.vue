@@ -108,6 +108,11 @@ function barHeight(count: number): number {
   return count > 0 ? Math.max(8, (count / max) * 100) : 0
 }
 
+function barWidth(count: number, records: { answered: number }[]): number {
+  const max = Math.max(...records.map(r => r.answered), 1)
+  return count > 0 ? Math.min(100, (count / max) * 100) : 0
+}
+
 function trendPointX(i: number): number {
   const n = trendData.value.length
   const spacing = n > 1 ? 260 / (n - 1) : 0
@@ -128,6 +133,14 @@ const trendLinePath = computed(() => {
   const first = pts[0]
   const lastX = trendPointX(trendData.value.length - 1)
   return `M${first} L${pts.slice(1).join(' L')} L${lastX},100 L${trendPointX(0)},100 Z`
+})
+
+const weeklyReport = computed(() => {
+  const reports = dataStore.weeklyReports
+  if (reports.length > 0) {
+    return reports[reports.length - 1]
+  }
+  return dataStore.generateWeeklyReport()
 })
 
 function goBack() {
@@ -300,11 +313,83 @@ function goBack() {
     </div>
 
     <div v-if="activeTab === 'knowledge'" class="tab-content">
-      <!-- Task 4 will fill this -->
+      <div class="section-card">
+        <div class="section-title">📚 知识点掌握度</div>
+        <div v-if="dataStore.knowledgePointStats.length === 0" class="empty-hint">
+          暂无练习数据，完成练习后可查看各知识点掌握情况
+        </div>
+        <div v-else class="kp-grid">
+          <div v-for="kp in dataStore.knowledgePointStats" :key="kp.id" class="kp-card">
+            <div class="kp-header">
+              <span class="kp-name">{{ getKpLabel(kp.id) }}</span>
+              <span class="kp-accuracy" :style="{ color: getAccuracyColor(kp.accuracy) }">{{ kp.accuracy }}%</span>
+            </div>
+            <div class="kp-bar">
+              <div class="kp-bar-fill" :style="{ width: kp.accuracy + '%', background: getAccuracyColor(kp.accuracy) }"></div>
+            </div>
+            <div class="kp-detail">{{ kp.correct }}/{{ kp.total }} 正确</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div v-if="activeTab === 'weekly'" class="tab-content">
-      <!-- Task 5 will fill this -->
+      <div class="section-card">
+        <div class="section-title">🗓 本周学习报告</div>
+        <div v-if="weeklyReport" class="report-card">
+          <div class="report-period">{{ weeklyReport.weekStart }} ~ {{ weeklyReport.weekEnd }}</div>
+          <div class="report-stats">
+            <div class="report-stat">
+              <span class="rs-value">{{ weeklyReport.totalAnswered }}</span>
+              <span class="rs-label">答题</span>
+            </div>
+            <div class="report-stat">
+              <span class="rs-value" :style="{ color: getAccuracyColor(weeklyReport.accuracy) }">{{ weeklyReport.accuracy }}%</span>
+              <span class="rs-label">正确率</span>
+            </div>
+            <div class="report-stat">
+              <span class="rs-value">{{ formatTime(weeklyReport.totalPlayTime) }}</span>
+              <span class="rs-label">学习时长</span>
+            </div>
+          </div>
+        </div>
+        <div v-else class="empty-hint">
+          暂无周报数据，完成一些练习后再来看看吧
+        </div>
+      </div>
+
+      <div class="section-card" v-if="weeklyReport && weeklyReport.dailyRecords && weeklyReport.dailyRecords.length > 0">
+        <div class="section-title">每日明细</div>
+        <div class="daily-list">
+          <div v-for="day in weeklyReport.dailyRecords" :key="day.date" class="daily-row">
+            <span class="daily-date">{{ day.date.slice(5) }}</span>
+            <div class="daily-bar-track">
+              <div class="daily-bar-fill" :style="{ width: barWidth(day.answered, weeklyReport.dailyRecords) + '%' }"></div>
+            </div>
+            <span class="daily-count">{{ day.answered }}题</span>
+            <span class="daily-acc" :style="{ color: getAccuracyColor(day.answered > 0 ? Math.round(day.correct / day.answered * 100) : 0) }">{{ day.answered > 0 ? Math.round(day.correct / day.answered * 100) : '-' }}%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card" v-if="weeklyReport">
+        <div class="section-title">💡 进步与建议</div>
+        <div class="improvements" v-if="weeklyReport.improvements && weeklyReport.improvements.length > 0">
+          <div v-for="(imp, i) in weeklyReport.improvements" :key="i" class="improvement-item">
+            <span class="imp-icon">✅</span>
+            <span class="imp-text">{{ imp }}</span>
+          </div>
+        </div>
+        <div class="suggestions" v-if="weeklyReport.suggestions && weeklyReport.suggestions.length > 0">
+          <div v-for="(sg, i) in weeklyReport.suggestions" :key="i" class="suggestion-item">
+            <span class="sg-icon">💡</span>
+            <span class="sg-text">{{ sg }}</span>
+          </div>
+        </div>
+        <div v-if="(!weeklyReport.improvements || weeklyReport.improvements.length === 0) && (!weeklyReport.suggestions || weeklyReport.suggestions.length === 0)" class="empty-hint">
+          暂无建议，继续加油！
+        </div>
+      </div>
     </div>
 
     <div v-if="activeTab === 'errors'" class="tab-content">
@@ -684,5 +769,167 @@ function goBack() {
 .trend-svg {
   width: 100%;
   height: auto;
+}
+
+/* Knowledge tab */
+.kp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.kp-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.kp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.kp-name {
+  color: #fff;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.kp-accuracy { font-size: 14px; font-weight: bold; }
+
+.kp-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.kp-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.kp-detail {
+  color: rgba(255,255,255,0.4);
+  font-size: 10px;
+}
+
+.empty-hint {
+  color: rgba(255,255,255,0.4);
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Weekly report tab */
+.report-card {
+  text-align: center;
+}
+
+.report-period {
+  color: rgba(255,255,255,0.4);
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.report-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.report-stat {
+  text-align: center;
+}
+
+.rs-value {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.rs-label {
+  display: block;
+  color: rgba(255,255,255,0.45);
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.daily-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.daily-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.daily-date {
+  color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  width: 32px;
+}
+
+.daily-bar-track {
+  flex: 1;
+  height: 8px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.daily-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #bb86fc, #6200ea);
+  border-radius: 4px;
+  transition: width 0.4s;
+}
+
+.daily-count {
+  color: rgba(255,255,255,0.5);
+  font-size: 11px;
+  width: 30px;
+  text-align: right;
+}
+
+.daily-acc {
+  font-size: 11px;
+  font-weight: bold;
+  width: 36px;
+  text-align: right;
+}
+
+.improvements, .suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.improvement-item, .suggestion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+}
+
+.imp-icon { color: #2ed573; }
+.sg-icon { color: #bb86fc; }
+
+.imp-text, .sg-text {
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  line-height: 1.4;
 }
 </style>
