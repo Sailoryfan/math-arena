@@ -1,0 +1,32 @@
+[
+  {
+    "id": 2,
+    "name": "有理数",
+    "description": "有理数的概念、分类、运算",
+    "knowledgePoints": [
+      {"id": "c2_1_1", "chapterId": 2, "sectionId": 1, "name": "正负数概念", "description": "正数、负数、零的概念和表示", "difficulty": 1, "prerequisites": [], "keyFormulas": ["正数>0", "负数<0", "0既不是正数也不是负数"], "commonMistakes": ["误认为0是正数或负数"]},
+      {"id": "c2_2_1", "chapterId": 2, "sectionId": 2, "name": "有理数分类", "description": "整数和分数的分类", "difficulty": 1, "prerequisites": ["c2_1_1"], "keyFormulas": ["有理数=整数+分数"], "commonMistakes": ["混淆整数和分数的分类"]},
+      {"id": "c2_3_1", "chapterId": 2, "sectionId": 3, "name": "数轴", "description": "数轴的定义、三要素、数轴上的点与数的对应", "difficulty": 1, "prerequisites": ["c2_1_1"], "keyFormulas": ["数轴三要素：原点、正方向、单位长度"], "commonMistakes": ["忘记数轴必须有单位长度"]},
+      {"id": "c2_4_1", "chapterId": 2, "sectionId": 4, "name": "绝对值与相反数", "description": "绝对值的定义和计算，相反数的概念", "difficulty": 2, "prerequisites": ["c2_1_1", "c2_3_1"], "keyFormulas": ["|a|=a (a≥0)", "|a|=-a (a<0)", "|a|≥0"], "commonMistakes": ["忘记绝对值结果非负", "混淆相反数和倒数"]},
+      {"id": "c2_5_1", "chapterId": 2, "sectionId": 5, "name": "有理数加减法", "description": "有理数的加法和减法运算", "difficulty": 2, "prerequisites": ["c2_1_1", "c2_4_1"], "keyFormulas": ["同号相加取相同符号", "异号相加取绝对值大的符号", "减去一个数等于加上它的相反数"], "commonMistakes": ["符号处理错误", "异号相加取错符号"]},
+      {"id": "c2_6_1", "chapterId": 2, "sectionId": 6, "name": "有理数乘除法", "description": "有理数的乘法和除法运算", "difficulty": 2, "prerequisites": ["c2_5_1"], "keyFormulas": ["同号得正，异号得负", "除以一个数等于乘以它的倒数"], "commonMistakes": ["符号判断错误", "忘记0不能做除数"]},
+      {"id": "c2_7_1", "chapterId": 2, "sectionId": 7, "name": "乘方", "description": "乘方的意义和运算", "difficulty": 2, "prerequisites": ["c2_6_1"], "keyFormulas": ["a^n = a×a×...×a (n个)", "负数的偶次方为正，奇次方为负"], "commonMistakes": ["(-2)² 和 -2² 混淆"]},
+      {"id": "c2_8_1", "chapterId": 2, "sectionId": 8, "name": "混合运算", "description": "有理数的四则混合运算", "difficulty": 3, "prerequisites": ["c2_5_1", "c2_6_1", "c2_7_1"], "keyFormulas": ["先算乘方，再算乘除，最后算加减", "有括号先算括号"], "commonMistakes": ["运算顺序错误", "符号处理错误"]}
+    ]
+  },
+  {
+    "id": 4,
+    "name": "一元一次方程",
+    "description": "方程的概念、解法和应用",
+    "knowledgePoints": [
+      {"id": "c4_1_1", "chapterId": 4, "sectionId": 1, "name": "方程概念", "description": "方程的定义、解的概念", "difficulty": 1, "prerequisites": [], "keyFormulas": ["方程=含有未知数的等式", "使方程成立的未知数的值叫方程的解"], "commonMistakes": ["混淆方程和代数式"]},
+      {"id": "c4_2_1", "chapterId": 4, "sectionId": 2, "name": "简单方程", "description": "一步和两步方程的解法", "difficulty": 1, "prerequisites": ["c4_1_1"], "keyFormulas": ["等式两边同时加减乘除同一个数"], "commonMistakes": ["移项忘记变号"]},
+      {"id": "c4_3_1", "chapterId": 4, "sectionId": 3, "name": "移项解方程", "description": "通过移项解方程", "difficulty": 2, "prerequisites": ["c4_2_1"], "keyFormulas": ["移项变号"], "commonMistakes": ["移项忘记变号"]},
+      {"id": "c4_4_1", "chapterId": 4, "sectionId": 4, "name": "去括号解方程", "description": "含括号的方程解法", "difficulty": 2, "prerequisites": ["c4_3_1"], "keyFormulas": ["括号前是正号，去括号不变号", "括号前是负号，去括号全变号"], "commonMistakes": ["去括号忘记变号"]},
+      {"id": "c4_5_1", "chapterId": 4, "sectionId": 5, "name": "去分母解方程", "description": "含分数的方程解法", "difficulty": 3, "prerequisites": ["c4_4_1"], "keyFormulas": ["等式两边乘以分母的最小公倍数"], "commonMistakes": ["去分母时漏乘某些项"]},
+      {"id": "c4_6_1", "chapterId": 4, "sectionId": 6, "name": "和差倍分应用题", "description": "和差倍分问题的方程解法", "difficulty": 3, "prerequisites": ["c4_3_1"], "keyFormulas": ["设未知数→找等量关系→列方程→解方程→检验"], "commonMistakes": ["等量关系找错", "忘记检验"]},
+      {"id": "c4_7_1", "chapterId": 4, "sectionId": 7, "name": "行程问题", "description": "行程问题的方程解法", "difficulty": 3, "prerequisites": ["c4_6_1"], "keyFormulas": ["路程=速度×时间", "相遇：路程和=总距离", "追及：路程差=初始距离"], "commonMistakes": ["速度方向搞混", "单位不统一"]},
+      {"id": "c4_8_1", "chapterId": 4, "sectionId": 8, "name": "综合应用", "description": "复杂方程和综合应用题", "difficulty": 4, "prerequisites": ["c4_5_1", "c4_6_1", "c4_7_1"], "keyFormulas": ["综合运用各种解方程技巧"], "commonMistakes": ["去分母和去括号顺序错误"]}
+    ]
+  }
+]

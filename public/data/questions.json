@@ -1,0 +1,3752 @@
+[
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "下列各数中，负数是",
+    "answer": "B",
+    "solution": "负数是小于0的数，$-5<0$，所以$-5$是负数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ],
+    "options": [
+      "$3$",
+      "$-5$",
+      "$0$",
+      "$\\frac{1}{2}$"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "下列各数中，正数是",
+    "answer": "D",
+    "solution": "正数是大于0的数，$2>0$，所以$2$是正数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ],
+    "options": [
+      "$-3$",
+      "$0$",
+      "$-\\frac{1}{2}$",
+      "$2$"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "$0$是",
+    "answer": "C",
+    "solution": "规定：$0$既不是正数也不是负数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ],
+    "options": [
+      "正数",
+      "负数",
+      "既不是正数也不是负数",
+      "既是正数又是负数"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "如果气温上升$3°C$记作$+3°C$，那么气温下降$5°C$记作____",
+    "answer": "$-5°C$",
+    "solution": "上升记为正，则下降记为负。下降$5°C$记作$-5°C$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "如果向右走$3m$记作$+3m$，那么向左走$4m$记作____",
+    "answer": "$-4m$",
+    "solution": "规定向右为正，则向左为负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列说法正确的是",
+    "answer": "B",
+    "solution": "盈利为正，亏损为负。盈利$100$元记作$+100$元是正确的。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ],
+    "options": [
+      "亏损$50$元记作$+50$元",
+      "盈利$100$元记作$+100$元",
+      "支出$200$元记作$+200$元",
+      "收入$-300$元表示支出$300$元"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列各组数中，都是负数的是",
+    "answer": "A",
+    "solution": "$-1,-2,-3$都小于$0$，都是负数。$0$不是负数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ],
+    "options": [
+      "$-1,-2,-3$",
+      "$-1,0,-2$",
+      "$0,-1,2$",
+      "$1,-2,3$"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "海拔高于海平面$100m$记作$+100m$，低于海平面$50m$记作____",
+    "answer": "$-50m$",
+    "solution": "高于海平面为正，低于海平面为负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "$-3$的相反数是____",
+    "answer": "$3$",
+    "solution": "一个数的相反数是改变符号，$-3$的相反数是$3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "比$-2$大$5$的数是____",
+    "answer": "$3$",
+    "solution": "$-2+5=3$",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_011",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "在$0,-1,2,-3$中，最小的数是",
+    "answer": "D",
+    "solution": "$-3<-1<0<2$，最小的是$-3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ],
+    "options": [
+      "$0$",
+      "$-1$",
+      "$2$",
+      "$-3$"
+    ]
+  },
+  {
+    "id": "ch2_012",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "如果把向东走$10m$记作$+10m$，那么向西走$6m$记作____",
+    "answer": "$-6m$",
+    "solution": "向东为正，向西为负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_013",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "某天最高气温为$5°C$，最低气温为$-3°C$，温差是____$°C$",
+    "answer": "$8$",
+    "solution": "温差$=5-(-3)=5+3=8°C$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_014",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列说法错误的是",
+    "answer": "C",
+    "solution": "$0$既不是正数也不是负数，所以C错误。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ],
+    "options": [
+      "$-1$是负数",
+      "$0$是整数",
+      "$0$是正数",
+      "$2$是正整数"
+    ]
+  },
+  {
+    "id": "ch2_015",
+    "chapterId": 2,
+    "sectionId": 1,
+    "knowledgePoint": "正负数概念",
+    "knowledgePointId": "c2_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "把盈利$80$元记作$+80$元，亏损$50$元记作____",
+    "answer": "$-50$元",
+    "solution": "盈利为正，亏损为负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "正负数概念"
+    ]
+  },
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "下列各数中，是整数的是",
+    "answer": "B",
+    "solution": "$-3$是整数。$\\frac{1}{2}$和$0.5$是分数，$\\pi$是无理数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ],
+    "options": [
+      "$\\frac{1}{2}$",
+      "$-3$",
+      "$0.5$",
+      "$\\pi$"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "下列各数中，是分数的是",
+    "answer": "C",
+    "solution": "$-\\frac{2}{3}$是分数。$0$和$-5$是整数，$\\sqrt{2}$是无理数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ],
+    "options": [
+      "$0$",
+      "$-5$",
+      "$-\\frac{2}{3}$",
+      "$\\sqrt{2}$"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "在$-3,0,\\frac{1}{2},-1.5,7$中，分数有____个",
+    "answer": "$2$",
+    "solution": "$\\frac{1}{2}$和$-1.5$是分数，共$2$个。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列说法正确的是",
+    "answer": "A",
+    "solution": "整数包括正整数、$0$和负整数。有理数包括整数和分数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ],
+    "options": [
+      "整数包括正整数、$0$和负整数",
+      "分数包括正分数和负分数，也包括$0$",
+      "有理数就是正数和负数",
+      "整数就是自然数"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "$-\\frac{3}{4}$属于____（填整数或分数）",
+    "answer": "分数",
+    "solution": "$-\\frac{3}{4}$是分数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "在$-1,0,\\frac{3}{2},-2.5,4$中，非负整数有",
+    "answer": "C",
+    "solution": "非负整数即$0$和正整数：$0$和$4$，共$2$个。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ],
+    "options": [
+      "$1$个",
+      "$2$个",
+      "$3$个",
+      "$4$个"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "$0$是____（填正整数、负整数或整数）",
+    "answer": "整数",
+    "solution": "$0$是整数，但不是正整数也不是负整数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "把$-0.5$化成分数是____",
+    "answer": "$-\\frac{1}{2}$",
+    "solution": "$-0.5=-\\frac{1}{2}$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列各数中，既是整数又是负数的是",
+    "answer": "B",
+    "solution": "$-7$既是整数又是负数。$0$是整数但不是负数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ],
+    "options": [
+      "$0$",
+      "$-7$",
+      "$-\\frac{1}{3}$",
+      "$3.5$"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 2,
+    "knowledgePoint": "有理数分类",
+    "knowledgePointId": "c2_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "将$\\frac{6}{3}$化简后是____",
+    "answer": "$2$",
+    "solution": "$\\frac{6}{3}=6\\div3=2$，是整数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数分类"
+    ]
+  },
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "数轴的三要素是",
+    "answer": "C",
+    "solution": "数轴三要素：原点、正方向、单位长度。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ],
+    "options": [
+      "原点、正方向、负方向",
+      "原点、负方向、单位长度",
+      "原点、正方向、单位长度",
+      "正方向、负方向、单位长度"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "数轴上，点$A$表示$-3$，点$B$表示$2$，则$A$、$B$两点之间的距离是____",
+    "answer": "$5$",
+    "solution": "距离$=|-3-2|=|-5|=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "数轴上点$A$表示$-5$，点$B$表示$-1$，则$A$、$B$之间的距离是____",
+    "answer": "$4$",
+    "solution": "距离$=|-5-(-1)|=|-4|=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "在数轴上，原点表示的数是",
+    "answer": "B",
+    "solution": "数轴上原点表示$0$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ],
+    "options": [
+      "$1$",
+      "$0$",
+      "$-1$",
+      "任意数"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "数轴上表示$3$的点在原点的____侧，距离原点____个单位长度",
+    "answer": "右,3",
+    "solution": "正数在原点右侧，$3$距离原点$3$个单位。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列关于数轴的说法正确的是",
+    "answer": "D",
+    "solution": "数轴是规定了原点、正方向和单位长度的直线。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ],
+    "options": [
+      "数轴是一条射线",
+      "数轴是一条线段",
+      "数轴上的点不一定是实数",
+      "数轴上右边的数总比左边的大"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "数轴上点$A$表示$-2$，将$A$向右移动$5$个单位后表示的数是____",
+    "answer": "$3$",
+    "solution": "$-2+5=3$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "数轴"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "$-4$的相反数是____",
+    "answer": "$4$",
+    "solution": "相反数是改变符号，$-4$的相反数是$4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "数轴上$-3$和$3$到原点的距离____（填相等或不等）",
+    "answer": "相等",
+    "solution": "$|-3|=3$，$|3|=3$，距离相等。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "数轴"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 3,
+    "knowledgePoint": "数轴",
+    "knowledgePointId": "c2_3_1",
+    "difficulty": 3,
+    "type": "choice",
+    "stem": "在数轴上，到原点距离为$4$的点表示的数是",
+    "answer": "C",
+    "solution": "到原点距离为$4$的点是$4$和$-4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "数轴"
+    ],
+    "options": [
+      "$4$",
+      "$-4$",
+      "$4$或$-4$",
+      "$0$"
+    ]
+  },
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "求$-7$的绝对值是____",
+    "answer": "$7$",
+    "solution": "$|-7|=7$，负数的绝对值是它的相反数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "$|5|=$____",
+    "answer": "$5$",
+    "solution": "正数的绝对值是它本身，$|5|=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "$|0|=$____",
+    "answer": "$0$",
+    "solution": "$0$的绝对值是$0$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "若$|a|=3$，则$a=$",
+    "answer": "C",
+    "solution": "$|a|=3$说明$a=3$或$a=-3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ],
+    "options": [
+      "$3$",
+      "$-3$",
+      "$3$或$-3$",
+      "$0$"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "若$|a-1|=2$，则$a=$____",
+    "answer": "$3$或$-1$",
+    "solution": "$a-1=2$或$a-1=-2$，所以$a=3$或$a=-1$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "若$a<0$，则$|a|=$____",
+    "answer": "$-a$",
+    "solution": "负数的绝对值是它的相反数，$|a|=-a$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相邻数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "$-(-5)=$",
+    "answer": "A",
+    "solution": "负负得正，$-(-5)=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相邻数"
+    ],
+    "options": [
+      "$5$",
+      "$-5$",
+      "$0$",
+      "$10$"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "$|-3.14|=$____",
+    "answer": "$3.14$",
+    "solution": "绝对值结果非负，$|-3.14|=3.14$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列各对数中，互为相反数的是",
+    "answer": "B",
+    "solution": "$3$和$-3$互为相反数，它们的和为$0$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ],
+    "options": [
+      "$3$和$\\frac{1}{3}$",
+      "$3$和$-3$",
+      "$-3$和$-\\frac{1}{3}$",
+      "$3$和$-\\frac{1}{3}$"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "若$|x|=|y|$且$x=2$，则$y=$____",
+    "answer": "$2$或$-2$",
+    "solution": "$|y|=2$，所以$y=2$或$y=-2$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_011",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "绝对值等于它本身的数是____",
+    "answer": "非负数",
+    "solution": "非负数（正数和$0$）的绝对值等于它本身。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_012",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "$3$的相反数是____",
+    "answer": "$-3$",
+    "solution": "改变符号即可。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_013",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "若$|a|+|b|=0$，则",
+    "answer": "D",
+    "solution": "绝对值非负，两个非负数之和为$0$，则每个都为$0$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ],
+    "options": [
+      "$a>0,b>0$",
+      "$a<0,b<0$",
+      "$a=b$",
+      "$a=0$且$b=0$"
+    ]
+  },
+  {
+    "id": "ch2_014",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "已知$|a|=2$，$|b|=3$，且$a<b$，则$a+b=$____",
+    "answer": "$5$或$1$",
+    "solution": "$a=\\pm2$，$b=\\pm3$。若$a<b$：$a=-2,b=3$得$1$；$a=-2,b=-3$不满足；$a=2,b=3$得$5$。所以$a+b=5$或$1$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_015",
+    "chapterId": 2,
+    "sectionId": 4,
+    "knowledgePoint": "绝对值与相反数",
+    "knowledgePointId": "c2_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "相反数等于它本身的数是____",
+    "answer": "$0$",
+    "solution": "只有$0$的相反数等于它本身。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "绝对值与相反数"
+    ]
+  },
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)+(-5)=$____",
+    "answer": "$-8$",
+    "solution": "同号相加：$(-3)+(-5)=-(3+5)=-8$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$4+6=$____",
+    "answer": "$10$",
+    "solution": "同为正数相加：$4+6=10$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$(-7)+(-2)=$____",
+    "answer": "$-9$",
+    "solution": "同号相加：$(-7)+(-2)=-(7+2)=-9$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$(-4)+(-6)=$____",
+    "answer": "$-10$",
+    "solution": "同号相加：$(-4)+(-6)=-(4+6)=-10$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$8+1=$____",
+    "answer": "$9$",
+    "solution": "$8+1=9$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)+5=$____",
+    "answer": "$2$",
+    "solution": "异号相加：$5-3=2$，取绝对值大的符号为正。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$7+(-10)=$____",
+    "answer": "$-3$",
+    "solution": "异号相加：$10-7=3$，取绝对值大的符号为负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-9)+4=$____",
+    "answer": "$-5$",
+    "solution": "异号相加：$9-4=5$，取负号。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$6+(-8)=$____",
+    "answer": "$-2$",
+    "solution": "异号相加：$8-6=2$，取负号。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-5)+5=$____",
+    "answer": "$0$",
+    "solution": "互为相反数的两数之和为$0$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_011",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-4)+7=$____",
+    "answer": "$3$",
+    "solution": "异号相加：$7-4=3$，取正号。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_012",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$3+(-8)=$____",
+    "answer": "$-5$",
+    "solution": "异号相加：$8-3=5$，取负号。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_013",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-2)+(-3)+5=$____",
+    "answer": "$0$",
+    "solution": "$(-2)+(-3)=-5$，$-5+5=0$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_014",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-4)+(-7)+(3)=$____",
+    "answer": "$-8$",
+    "solution": "$(-4)+(-7)=-11$，$-11+3=-8$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_015",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$5-8=$____",
+    "answer": "$-3$",
+    "solution": "减法变加法：$5+(-8)=-3$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_016",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)-(-7)=$____",
+    "answer": "$4$",
+    "solution": "减去负数等于加正数：$(-3)+7=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_017",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$0-(-5)=$____",
+    "answer": "$5$",
+    "solution": "$0+5=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_018",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-6)+(-4)+(-3)=$____",
+    "answer": "$-13$",
+    "solution": "$(-6)+(-4)=-10$，$-10+(-3)=-13$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_019",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$2+7=$____",
+    "answer": "$9$",
+    "solution": "$2+7=9$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_020",
+    "chapterId": 2,
+    "sectionId": 5,
+    "knowledgePoint": "有理数加减法",
+    "knowledgePointId": "c2_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)+(-2)+(-3)+(-4)=$____",
+    "answer": "$-10$",
+    "solution": "$(-1)+(-2)=-3$，$-3+(-3)=-6$，$-6+(-4)=-10$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数加减法"
+    ]
+  },
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)\\times 4=$____",
+    "answer": "$-12$",
+    "solution": "异号得负：$(-3)\\times 4=-12$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$5\\times (-2)=$____",
+    "answer": "$-10$",
+    "solution": "异号得负：$5\\times(-2)=-10$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$(-6)\\times 3=$____",
+    "answer": "$-18$",
+    "solution": "异号得负：$(-6)\\times 3=-18$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$7\\times (-1)=$____",
+    "answer": "$-7$",
+    "solution": "异号得负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-24)\\div 6=$____",
+    "answer": "$-4$",
+    "solution": "异号得负：$(-24)\\div 6=-4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$36\\div (-4)=$____",
+    "answer": "$-9$",
+    "solution": "异号得负：$36\\div(-4)=-9$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-45)\\div 5=$____",
+    "answer": "$-9$",
+    "solution": "异号得负：$(-45)\\div 5=-9$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$56\\div (-8)=$____",
+    "answer": "$-7$",
+    "solution": "异号得负：$56\\div(-8)=-7$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-12)\\div (-3)=$____",
+    "answer": "$4$",
+    "solution": "同号得正：$(-12)\\div(-3)=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-2)\\times (-3)\\times (-4)=$____",
+    "answer": "$-24$",
+    "solution": "三个负数相乘：$(-2)\\times(-3)=6$，$6\\times(-4)=-24$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_011",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)\\times (-2)\\times (-3)=$____",
+    "answer": "$-6$",
+    "solution": "奇数个负数相乘结果为负：$1\\times2\\times3=6$，取负号。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_012",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "两个有理数的积为负数，则这两个数",
+    "answer": "B",
+    "solution": "积为负说明两数异号。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ],
+    "options": [
+      "同为正",
+      "一正一负",
+      "同为负",
+      "至少一个为零"
+    ]
+  },
+  {
+    "id": "ch2_013",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "两个有理数的商为正数，则这两个数",
+    "answer": "A",
+    "solution": "商为正说明两数同号。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ],
+    "options": [
+      "同号",
+      "异号",
+      "至少一个为正",
+      "至少一个为负"
+    ]
+  },
+  {
+    "id": "ch2_014",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-4)\\div 2+3=$____",
+    "answer": "$1$",
+    "solution": "先算除法：$(-4)\\div 2=-2$，$-2+3=1$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_015",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$0\\times (-5)=$____",
+    "answer": "$0$",
+    "solution": "任何数乘以$0$都等于$0$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_016",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)\\times 20=$____",
+    "answer": "$-20$",
+    "solution": "异号得负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_017",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)\\times (-3)\\times (-3)=$____",
+    "answer": "$-27$",
+    "solution": "奇数个负数相乘为负：$3\\times3\\times3=27$，取负号。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_018",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-0.5)\\times (-8)=$____",
+    "answer": "$4$",
+    "solution": "同号得正：$0.5\\times 8=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_019",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 3,
+    "type": "choice",
+    "stem": "若$a<0$，$b>0$，则$ab$的符号是",
+    "answer": "B",
+    "solution": "负数乘以正数结果为负。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "有理数乘除法"
+    ],
+    "options": [
+      "正",
+      "负",
+      "零",
+      "不确定"
+    ]
+  },
+  {
+    "id": "ch2_020",
+    "chapterId": 2,
+    "sectionId": 6,
+    "knowledgePoint": "有理数乘除法",
+    "knowledgePointId": "c2_6_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-15)\\div (-3)=$____",
+    "answer": "$5$",
+    "solution": "同号得正：$15\\div 3=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "有理数乘除法"
+    ]
+  },
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$2^2=$____",
+    "answer": "$4$",
+    "solution": "$2^2=2\\times 2=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$3^2=$____",
+    "answer": "$9$",
+    "solution": "$3^2=3\\times 3=9$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$4^2=$____",
+    "answer": "$16$",
+    "solution": "$4^2=4\\times 4=16$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "计算：$5^2=$____",
+    "answer": "$25$",
+    "solution": "$5^2=5\\times 5=25$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)^2=$____",
+    "answer": "$9$",
+    "solution": "$(-3)^2=(-3)\\times(-3)=9$。负数的偶次方为正。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-4)^2=$____",
+    "answer": "$16$",
+    "solution": "$(-4)^2=(-4)\\times(-4)=16$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)^{100}=$____",
+    "answer": "$1$",
+    "solution": "$100$是偶数，$(-1)$的偶次方等于$1$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)^{99}=$____",
+    "answer": "$-1$",
+    "solution": "$99$是奇数，$(-1)$的奇次方等于$-1$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列计算正确的是",
+    "answer": "C",
+    "solution": "$(-2)^2=4$，$-2^2=-4$。注意括号的区别。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ],
+    "options": [
+      "$(-2)^2=-4$",
+      "$-2^2=4$",
+      "$(-2)^2=4$",
+      "$-(-2)^2=4$"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)^{10}+(-1)^{11}=$____",
+    "answer": "$0$",
+    "solution": "$(-1)^{10}=1$，$(-1)^{11}=-1$，$1+(-1)=0$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_011",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-2)^3=$____",
+    "answer": "$-8$",
+    "solution": "$(-2)^3=(-2)\\times(-2)\\times(-2)=-8$。负数的奇次方为负。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_012",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$2^3=$____",
+    "answer": "$8$",
+    "solution": "$2^3=2\\times 2\\times 2=8$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_013",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)^{20}+(-1)^{21}+(-1)^{22}=$____",
+    "answer": "$1$",
+    "solution": "$1+(-1)+1=1$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_014",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)^3=$____",
+    "answer": "$-27$",
+    "solution": "奇次方为负：$3^3=27$，取负号。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ]
+  },
+  {
+    "id": "ch2_015",
+    "chapterId": 2,
+    "sectionId": 7,
+    "knowledgePoint": "乘方",
+    "knowledgePointId": "c2_7_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "$(-2)^2$和$-2^2$的关系是",
+    "answer": "B",
+    "solution": "$(-2)^2=4$，$-2^2=-4$，互为相反数。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "乘方"
+    ],
+    "options": [
+      "相等",
+      "互为相反数",
+      "互为倒数",
+      "没有关系"
+    ]
+  },
+  {
+    "id": "ch2_001",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-2)\\times 3\\times (-4)=$____",
+    "answer": "$24$",
+    "solution": "$(-2)\\times 3=-6$，$-6\\times(-4)=24$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_002",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)\\times (-2)\\times (-3)=$____",
+    "answer": "$-6$",
+    "solution": "奇数个负数相乘为负。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_003",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-3)\\times (-3)\\times (-3)=$____",
+    "answer": "$-27$",
+    "solution": "$(-3)^3=-27$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_004",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-12)\\div (-3)\\div 2=$____",
+    "answer": "$2$",
+    "solution": "$(-12)\\div(-3)=4$，$4\\div 2=2$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_005",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-2)^3+3\\times(-2)-(-4)=$____",
+    "answer": "$-8$",
+    "solution": "$(-2)^3=-8$，$3\\times(-2)=-6$，$-8+(-6)+4=-10$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_006",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)^3\\times (-2)^4+(-5)=$____",
+    "answer": "$11$",
+    "solution": "$(-1)^3=-1$，$(-2)^4=16$，$-1\\times 16=-16$，$-16+(-5)=-21$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_007",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$\\frac{(-6)\\times 2}{(-3)}+(-1)^4=$____",
+    "answer": "$5$",
+    "solution": "$\\frac{-12}{-3}=4$，$(-1)^4=1$，$4+1=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_008",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "计算：$(-2)^2+(-3)^2=$____",
+    "answer": "$13$",
+    "solution": "$(-2)^2=4$，$(-3)^2=9$，$4+9=13$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_009",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-4)\\div 2+3=$____",
+    "answer": "$1$",
+    "solution": "先算除法：$(-4)\\div 2=-2$，$-2+3=1$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_010",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "计算：$(-2)^3+(-3)\\times 2-(-4)=$____",
+    "answer": "$-8$",
+    "solution": "$(-2)^3=-8$，$(-3)\\times 2=-6$，$-8+(-6)+4=-10$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_011",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-5)\\times (-2)+(-3)\\times 4=$____",
+    "answer": "$-2$",
+    "solution": "$(-5)\\times(-2)=10$，$(-3)\\times 4=-12$，$10+(-12)=-2$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_012",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "计算：$[(-3)+(-5)]\\times (-2)=$____",
+    "answer": "$16$",
+    "solution": "$(-3)+(-5)=-8$，$-8\\times(-2)=16$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_013",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "计算：$(-6)\\div 3+(-2)\\times 5=$____",
+    "answer": "$-12$",
+    "solution": "先乘除后加减：$(-6)\\div 3=-2$，$(-2)\\times 5=-10$，$-2+(-10)=-12$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_014",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "计算：$(-1)^{50}+(-2)^3\\times (-3)=$____",
+    "answer": "$25$",
+    "solution": "$(-1)^{50}=1$，$(-2)^3=-8$，$-8\\times(-3)=24$，$1+24=25$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ]
+  },
+  {
+    "id": "ch2_015",
+    "chapterId": 2,
+    "sectionId": 8,
+    "knowledgePoint": "混合运算",
+    "knowledgePointId": "c2_8_1",
+    "difficulty": 3,
+    "type": "choice",
+    "stem": "计算$(-2)^3\\times (-3)^2$的结果是",
+    "answer": "C",
+    "solution": "$(-2)^3=-8$，$(-3)^2=9$，$-8\\times 9=-72$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "混合运算"
+    ],
+    "options": [
+      "$72$",
+      "$36$",
+      "$-72$",
+      "$-36$"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "下列各式中，是方程的是",
+    "answer": "B",
+    "solution": "方程是含有未知数的等式。$2x+3=7$是含有未知数的等式。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ],
+    "options": [
+      "$2+3=5$",
+      "$2x+3=7$",
+      "$x+5$",
+      "$3>1$"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 1,
+    "type": "choice",
+    "stem": "方程$3x=12$的解是",
+    "answer": "C",
+    "solution": "两边除以$3$：$x=12\\div 3=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ],
+    "options": [
+      "$x=3$",
+      "$x=6$",
+      "$x=4$",
+      "$x=36$"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "方程$x+5=12$的解是$x=$____",
+    "answer": "$7$",
+    "solution": "两边减$5$：$x=12-5=7$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "下列说法正确的是",
+    "answer": "A",
+    "solution": "使方程左右两边相等的未知数的值叫做方程的解。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ],
+    "options": [
+      "方程的解是使方程成立的未知数的值",
+      "方程一定有解",
+      "含有字母的式子就是方程",
+      "等式就是方程"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "方程$2x=10$的解是$x=$____",
+    "answer": "$5$",
+    "solution": "两边除以$2$：$x=10\\div 2=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "方程$x-4=0$的解是$x=$____",
+    "answer": "$4$",
+    "solution": "两边加$4$：$x=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "方程$\\frac{x}{2}=4$的解是$x=$____",
+    "answer": "$8$",
+    "solution": "两边乘$2$：$x=4\\times 2=8$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 2,
+    "type": "choice",
+    "stem": "$x=3$是下列哪个方程的解？",
+    "answer": "A",
+    "solution": "代入验证：$2\\times 3-1=5$，成立。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ],
+    "options": [
+      "$2x-1=5$",
+      "$3x+1=5$",
+      "$x+5=7$",
+      "$2x=5$"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "方程$5x=25$的解是$x=$____",
+    "answer": "$5$",
+    "solution": "两边除以$5$：$x=25\\div 5=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 1,
+    "knowledgePoint": "方程概念",
+    "knowledgePointId": "c4_1_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "方程$-x=6$的解是$x=$____",
+    "answer": "$-6$",
+    "solution": "两边乘$-1$：$x=-6$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "方程概念"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "解方程：$x+7=15$，$x=$____",
+    "answer": "$8$",
+    "solution": "两边减$7$：$x=15-7=8$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "解方程：$3x=21$，$x=$____",
+    "answer": "$7$",
+    "solution": "两边除以$3$：$x=21\\div 3=7$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "解方程：$x-5=10$，$x=$____",
+    "answer": "$15$",
+    "solution": "两边加$5$：$x=10+5=15$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x}{3}=4$，$x=$____",
+    "answer": "$12$",
+    "solution": "两边乘$3$：$x=4\\times 3=12$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$2x+1=9$，$x=$____",
+    "answer": "$4$",
+    "solution": "两边减$1$：$2x=8$，两边除以$2$：$x=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$5x-3=12$，$x=$____",
+    "answer": "$3$",
+    "solution": "两边加$3$：$5x=15$，两边除以$5$：$x=3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$4x+8=20$，$x=$____",
+    "answer": "$3$",
+    "solution": "两边减$8$：$4x=12$，两边除以$4$：$x=3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$7x=14$，$x=$____",
+    "answer": "$2$",
+    "solution": "两边除以$7$：$x=14\\div 7=2$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$-2x=8$，$x=$____",
+    "answer": "$-4$",
+    "solution": "两边除以$-2$：$x=8\\div(-2)=-4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$x+3=1$，$x=$____",
+    "answer": "$-2$",
+    "solution": "两边减$3$：$x=1-3=-2$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_011",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 1,
+    "type": "fill_blank",
+    "stem": "解方程：$x-8=0$，$x=$____",
+    "answer": "$8$",
+    "solution": "两边加$8$：$x=8$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_012",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$6x-2=16$，$x=$____",
+    "answer": "$3$",
+    "solution": "两边加$2$：$6x=18$，两边除以$6$：$x=3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_013",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$-3x+1=-8$，$x=$____",
+    "answer": "$3$",
+    "solution": "两边减$1$：$-3x=-9$，两边除以$-3$：$x=3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_014",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x}{5}+1=3$，$x=$____",
+    "answer": "$10$",
+    "solution": "两边减$1$：$\\frac{x}{5}=2$，两边乘$5$：$x=10$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_015",
+    "chapterId": 4,
+    "sectionId": 2,
+    "knowledgePoint": "简单方程",
+    "knowledgePointId": "c4_2_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$2x-7=3$，$x=$____",
+    "answer": "$5$",
+    "solution": "两边加$7$：$2x=10$，两边除以$2$：$x=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "简单方程"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$5x-3=2x+9$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$5x-2x=9+3$，$3x=12$，$x=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$4x+1=3x+5$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$4x-3x=5-1$，$x=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$6x-2=4x+8$，$x=$____",
+    "answer": "$5$",
+    "solution": "移项：$6x-4x=8+2$，$2x=10$，$x=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$3x+7=2x+12$，$x=$____",
+    "answer": "$5$",
+    "solution": "移项：$3x-2x=12-7$，$x=5$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$8x-5=6x+3$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$8x-6x=3+5$，$2x=8$，$x=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$7x-5=3x+11$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$7x-3x=11+5$，$4x=16$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$9x+3=5x+19$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$9x-5x=19-3$，$4x=16$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$2x-8=6x-24$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$2x-6x=-24+8$，$-4x=-16$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$10x+1=7x+13$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$10x-7x=13-1$，$3x=12$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$3x+2=x+8$，$x=$____",
+    "answer": "$3$",
+    "solution": "移项：$3x-x=8-2$，$2x=6$，$x=3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_011",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$5x+6=9x-10$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$5x-9x=-10-6$，$-4x=-16$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_012",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$6x-1=4x+5$，$x=$____",
+    "answer": "$3$",
+    "solution": "移项：$6x-4x=5+1$，$2x=6$，$x=3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_013",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$-3x+10=4x-4$，$x=$____",
+    "answer": "$2$",
+    "solution": "移项：$-3x-4x=-4-10$，$-7x=-14$，$x=2$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_014",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$11x-7=8x+5$，$x=$____",
+    "answer": "$4$",
+    "solution": "移项：$11x-8x=5+7$，$3x=12$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_015",
+    "chapterId": 4,
+    "sectionId": 3,
+    "knowledgePoint": "移项解方程",
+    "knowledgePointId": "c4_3_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$4x-9=2x+1$，$x=$____",
+    "answer": "$5$",
+    "solution": "移项：$4x-2x=1+9$，$2x=10$，$x=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "移项解方程"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$2(x+3)=10$，$x=$____",
+    "answer": "$2$",
+    "solution": "去括号：$2x+6=10$，$2x=4$，$x=2$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$3(x-1)=9$，$x=$____",
+    "answer": "$4$",
+    "solution": "去括号：$3x-3=9$，$3x=12$，$x=4$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$4(2x+1)=20$，$x=$____",
+    "answer": "$2$",
+    "solution": "去括号：$8x+4=20$，$8x=16$，$x=2$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$2(x-5)=8$，$x=$____",
+    "answer": "$9$",
+    "solution": "去括号：$2x-10=8$，$2x=18$，$x=9$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 2,
+    "type": "fill_blank",
+    "stem": "解方程：$5(x+2)=25$，$x=$____",
+    "answer": "$3$",
+    "solution": "去括号：$5x+10=25$，$5x=15$，$x=3$。",
+    "hints": [],
+    "timeLimit": 30,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$3(2x-1)=2(x+4)$，$x=$____",
+    "answer": "$\\frac{11}{4}$",
+    "solution": "去括号：$6x-3=2x+8$，$4x=11$，$x=\\frac{11}{4}$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$2(x+3)=3(x-1)$，$x=$____",
+    "answer": "$9$",
+    "solution": "去括号：$2x+6=3x-3$，$-x=-9$，$x=9$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$4(2x+1)=3(3x-2)$，$x=$____",
+    "answer": "$10$",
+    "solution": "去括号：$8x+4=9x-6$，$-x=-10$，$x=10$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$5(x-1)=3(x+1)$，$x=$____",
+    "answer": "$4$",
+    "solution": "去括号：$5x-5=3x+3$，$2x=8$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 4,
+    "knowledgePoint": "去括号解方程",
+    "knowledgePointId": "c4_4_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$2(3x+1)=4(x+2)$，$x=$____",
+    "answer": "$3$",
+    "solution": "去括号：$6x+2=4x+8$，$2x=6$，$x=3$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去括号解方程"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x}{2}+1=3$，$x=$____",
+    "answer": "$4$",
+    "solution": "两边乘$2$：$x+2=6$，$x=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x}{3}=2$，$x=$____",
+    "answer": "$6$",
+    "solution": "两边乘$3$：$x=6$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x+1}{2}=3$，$x=$____",
+    "answer": "$5$",
+    "solution": "两边乘$2$：$x+1=6$，$x=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x-2}{3}=1$，$x=$____",
+    "answer": "$5$",
+    "solution": "两边乘$3$：$x-2=3$，$x=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{2x}{3}=4$，$x=$____",
+    "answer": "$6$",
+    "solution": "两边乘$3$：$2x=12$，$x=6$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x-1}{3}=\\frac{x+1}{2}$，$x=$____",
+    "answer": "$-5$",
+    "solution": "两边乘$6$：$2(x-1)=3(x+1)$，$2x-2=3x+3$，$-x=5$，$x=-5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x}{2}+\\frac{x}{3}=5$，$x=$____",
+    "answer": "$6$",
+    "solution": "两边乘$6$：$3x+2x=30$，$5x=30$，$x=6$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x+1}{4}=\\frac{x-1}{2}$，$x=$____",
+    "answer": "$3$",
+    "solution": "两边乘$4$：$x+1=2(x-1)$，$x+1=2x-2$，$-x=-3$，$x=3$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{2x-1}{3}-\\frac{x}{2}=0$，$x=$____",
+    "answer": "$2$",
+    "solution": "两边乘$6$：$2(2x-1)-3x=0$，$4x-2-3x=0$，$x=2$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 5,
+    "knowledgePoint": "去分母解方程",
+    "knowledgePointId": "c4_5_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{x}{5}+1=\\frac{2x}{3}$，$x=$____",
+    "answer": "$\\frac{15}{7}$",
+    "solution": "两边乘$15$：$3x+15=10x$，$7x=15$，$x=\\frac{15}{7}$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "去分母解方程"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一个数的$3$倍比它的$2$倍多$5$，这个数是____",
+    "answer": "$5$",
+    "solution": "设这个数为$x$：$3x-2x=5$，$x=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一个数的$4$倍减去$3$等于$9$，这个数是____",
+    "answer": "$3$",
+    "solution": "设这个数为$x$：$4x-3=9$，$4x=12$，$x=3$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "两个数的和是$20$，差是$6$，较大的数是____",
+    "answer": "$13$",
+    "solution": "设较大的数为$x$：$x+(x-6)=20$，$2x=26$，$x=13$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一个数的$5$倍等于它加上$12$，这个数是____",
+    "answer": "$3$",
+    "solution": "设这个数为$x$：$5x=x+12$，$4x=12$，$x=3$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "甲数是乙数的$3$倍，两数之和是$24$，乙数是____",
+    "answer": "$6$",
+    "solution": "设乙数为$x$：$3x+x=24$，$4x=24$，$x=6$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一个数的$2$倍加上$3$等于$15$，这个数是____",
+    "answer": "$6$",
+    "solution": "设这个数为$x$：$2x+3=15$，$2x=12$，$x=6$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一个数减去$5$的差的$2$倍等于$8$，这个数是____",
+    "answer": "$9$",
+    "solution": "设这个数为$x$：$2(x-5)=8$，$x-5=4$，$x=9$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "三个连续整数的和是$27$，中间的整数是____",
+    "answer": "$9$",
+    "solution": "设中间整数为$n$：$(n-1)+n+(n+1)=27$，$3n=27$，$n=9$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一个数的$3$倍减去$7$等于这个数加上$5$，这个数是____",
+    "answer": "$6$",
+    "solution": "设这个数为$x$：$3x-7=x+5$，$2x=12$，$x=6$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 6,
+    "knowledgePoint": "和差倍分应用题",
+    "knowledgePointId": "c4_6_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一个长方形的周长是$24$，长比宽多$2$，宽是____",
+    "answer": "$5$",
+    "solution": "设宽为$x$：$2(x+x+2)=24$，$4x+4=24$，$x=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "和差倍分应用题"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "甲乙两人相距$100km$，相向而行，甲速度$5km/h$，乙速度$3km/h$，____小时后相遇",
+    "answer": "$12.5$",
+    "solution": "设$t$小时相遇：$5t+3t=100$，$8t=100$，$t=12.5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一列火车从A到B需$4$小时，速度$60km/h$，AB距离是____$km$",
+    "answer": "$240$",
+    "solution": "距离$=$速度$\\times$时间$=60\\times 4=240km$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "小明骑车速度$15km/h$，骑了$2$小时，共走了____$km$",
+    "answer": "$30$",
+    "solution": "距离$=15\\times 2=30km$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "甲乙同时同地出发，甲向北$6km/h$，乙向南$4km/h$，$3$小时后相距____$km$",
+    "answer": "$30$",
+    "solution": "距离$=(6+4)\\times 3=30km$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一船在静水中速度$10km/h$，水流速度$2km/h$，顺流速度是____$km/h$",
+    "answer": "$12$",
+    "solution": "顺流速度$=$静水$+$水流$=10+2=12km/h$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 3,
+    "type": "fill_blank",
+    "stem": "一船在静水中速度$10km/h$，水流速度$2km/h$，逆流速度是____$km/h$",
+    "answer": "$8$",
+    "solution": "逆流速度$=$静水$-$水流$=10-2=8km/h$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "甲乙相距$200km$，甲速度$20km/h$，乙速度$30km/h$，相向而行，____小时相遇",
+    "answer": "$4$",
+    "solution": "设$t$小时相遇：$20t+30t=200$，$50t=200$，$t=4$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "小明从家到学校，步行速度$5km/h$需$30$分钟，距离是____$km$",
+    "answer": "$2.5$",
+    "solution": "$30$分钟$=0.5$小时，距离$=5\\times 0.5=2.5km$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "一辆汽车以$60km/h$行驶$2.5$小时，又以$80km/h$行驶$1.5$小时，总路程是____$km$",
+    "answer": "$270$",
+    "solution": "$60\\times 2.5+80\\times 1.5=150+120=270km$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 7,
+    "knowledgePoint": "行程问题",
+    "knowledgePointId": "c4_7_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "小明和小红从AB两地同时出发相向而行，小明速度$4km/h$，小红$3km/h$，$2$小时后相遇，AB距离是____$km$",
+    "answer": "$14$",
+    "solution": "距离$=(4+3)\\times 2=14km$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "行程问题"
+    ]
+  },
+  {
+    "id": "ch4_001",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "解方程：$\\frac{2x-1}{3}-\\frac{x+1}{2}=1$，$x=$____",
+    "answer": "$11$",
+    "solution": "两边乘$6$：$2(2x-1)-3(x+1)=6$，$4x-2-3x-3=6$，$x=11$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_002",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "解方程：$0.5x+0.3=0.4x+0.8$，$x=$____",
+    "answer": "$5$",
+    "solution": "$0.5x-0.4x=0.8-0.3$，$0.1x=0.5$，$x=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_003",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "一个两位数，十位数字比个位数字大$2$，两数字之和是$8$，这个两位数是____",
+    "answer": "$53$",
+    "solution": "设个位数字为$x$：$(x+2)+x=8$，$2x=6$，$x=3$，十位为$5$，两位数为$53$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_004",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "若关于$x$的方程$2x+a=5$的解是$x=1$，则$a=$____",
+    "answer": "$3$",
+    "solution": "代入$x=1$：$2\\times 1+a=5$，$a=3$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_005",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "某商品打$8$折后售价为$80$元，原价是____元",
+    "answer": "$100$",
+    "solution": "设原价$x$：$0.8x=80$，$x=100$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_006",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 5,
+    "type": "fill_blank",
+    "stem": "甲乙两仓库共有货物$100$吨，从甲运$20$吨到乙后，乙是甲的$2$倍，甲原有____吨",
+    "answer": "$60$",
+    "solution": "设甲原有$x$：$2(x-20)=100-x+20$，$2x-40=120-x$，$3x=160$，$x=\\frac{160}{3}$。验证：甲$60$乙$40$，甲运出$20$剩$40$，乙收到$20$后$60=2\\times 40$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_007",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 5,
+    "type": "fill_blank",
+    "stem": "一项工程甲单独做需$10$天，乙单独做需$15$天，合做____天完成",
+    "answer": "$6$",
+    "solution": "设合做$x$天：$\\frac{x}{10}+\\frac{x}{15}=1$，$3x+2x=30$，$5x=30$，$x=6$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_008",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 5,
+    "type": "fill_blank",
+    "stem": "一列队伍长$200m$，以$2m/s$的速度通过一座$400m$的桥，需要____秒",
+    "answer": "$300$",
+    "solution": "总距离$=200+400=600m$，时间$=600\\div 2=300$秒。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_009",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 5,
+    "type": "fill_blank",
+    "stem": "一个水池有进水管和出水管，进水管每分钟进水$3L$，出水管每分钟出水$1L$，同时开____分钟能装满$60L$",
+    "answer": "$30$",
+    "solution": "每分钟净进水$3-1=2L$，$60\\div 2=30$分钟。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  },
+  {
+    "id": "ch4_010",
+    "chapterId": 4,
+    "sectionId": 8,
+    "knowledgePoint": "综合应用",
+    "knowledgePointId": "c4_8_1",
+    "difficulty": 4,
+    "type": "fill_blank",
+    "stem": "甲速度是乙的$2$倍，甲走$30km$的时间乙走$15km$，乙的速度是____$km/h$",
+    "answer": "$5$",
+    "solution": "设乙速度为$v$：$\\frac{30}{2v}=\\frac{15}{v}$，解得$v=5$。",
+    "hints": [],
+    "timeLimit": 60,
+    "tags": [
+      "综合应用"
+    ]
+  }
+]
