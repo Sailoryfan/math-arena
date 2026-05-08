@@ -88,6 +88,7 @@ function isFillCorrect(): boolean {
         </button>
         <button class="numpad-btn" @click="onNumberInput(userAnswer + '-')">-</button>
         <button class="numpad-btn" @click="onNumberInput(userAnswer + '0')">0</button>
+        <button class="numpad-btn" @click="onNumberInput(userAnswer + '/')">/</button>
         <button class="numpad-btn" @click="onNumberInput(userAnswer + '.')">.</button>
         <button class="numpad-btn action" @click="onNumberInput(userAnswer.slice(0, -1))">←</button>
         <button class="numpad-btn action submit" @click="onNumberSubmit(userAnswer)">确认</button>

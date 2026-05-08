@@ -18,6 +18,10 @@ function handleRetest() {
 
 <template>
   <div class="my-page">
+    <div class="header">
+      <button class="back-btn" @click="router.push('/')">←</button>
+      <h1>我的</h1>
+    </div>
     <div class="profile-card">
       <div class="avatar-large">{{ userStore.profile.avatar }}</div>
       <div class="nickname">{{ userStore.profile.nickname }}</div>
@@ -91,13 +95,38 @@ function handleRetest() {
 .my-page {
   min-height: 100vh;
   background: #0f1923;
-  padding: 20px;
+  padding: 16px;
   padding-bottom: 80px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.header h1 {
+  flex: 1;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
 }
 
 .profile-card {
   text-align: center;
-  padding: 32px;
+  padding: 28px;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   margin-bottom: 20px;

@@ -213,7 +213,7 @@ onUnmounted(() => {
             />
           </div>
           <div class="numpad">
-            <button v-for="n in ['7','8','9','4','5','6','1','2','3','-','0','.']" :key="n"
+            <button v-for="n in ['7','8','9','4','5','6','1','2','3','-','0','/','.']" :key="n"
               class="numpad-btn" :disabled="!!feedback"
               @click="inputAnswer += n">{{ n }}</button>
             <button class="numpad-btn del" :disabled="!!feedback"
