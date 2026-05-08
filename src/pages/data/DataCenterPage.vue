@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue'
+import { ref, onMounted, computed, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useDataCenterStore } from '@/stores/dataCenterStore'
 import { useUserStore } from '@/stores/userStore'
@@ -11,19 +11,36 @@ const dataStore = useDataCenterStore()
 const userStore = useUserStore()
 const practiceStore = usePracticeStore()
 
-const activeTab = ref<'overview' | 'trend' | 'knowledge' | 'errors'>('overview')
+const activeTab = ref<'overview' | 'trend' | 'knowledge' | 'weekly' | 'errors'>('overview')
 
 const tabs = [
   { key: 'overview' as const, label: '总览' },
   { key: 'trend' as const, label: '趋势' },
   { key: 'knowledge' as const, label: '知识点' },
+  { key: 'weekly' as const, label: '周报' },
   { key: 'errors' as const, label: '错题' },
+]
+
+const radarDimensions = [
+  { key: 'numberSense', label: '数感' },
+  { key: 'symbolSense', label: '符号感' },
+  { key: 'logicReasoning', label: '逻辑推理' },
+  { key: 'spatialImagination', label: '空间想象' },
+  { key: 'dataAnalysis', label: '数据分析' },
+  { key: 'computation', label: '运算能力' },
+  { key: 'equationSolving', label: '方程求解' },
+  { key: 'geometryApps', label: '几何应用' },
+  { key: 'probability', label: '概率统计' },
+  { key: 'comprehensive', label: '综合应用' },
 ]
 
 const radarData = computed(() => {
   const scores = userStore.profile.diagnosticProfile.abilityScores
-  if (Object.keys(scores).length === 0) return null
-  return scores
+  const result: Record<string, number> = {}
+  for (const dim of radarDimensions) {
+    result[dim.key] = scores[dim.key] ?? 0
+  }
+  return result
 })
 
 const knowledgePointLabels: Record<string, string> = {
@@ -82,271 +99,59 @@ function goBack() {
 
 <template>
   <div class="data-page">
+    <!-- Header -->
     <div class="header">
       <button class="back-btn" @click="goBack">←</button>
       <h1>数据中心</h1>
+      <span class="header-level">Lv.{{ dataStore.overallStats.level }}</span>
     </div>
 
-    <!-- Tabs -->
+    <!-- Tabs (5 tabs) -->
     <div class="tabs">
-      <button
-        v-for="tab in tabs"
-        :key="tab.key"
-        class="tab"
-        :class="{ active: activeTab === tab.key }"
-        @click="activeTab = tab.key"
-      >
+      <button v-for="tab in tabs" :key="tab.key" class="tab" :class="{ active: activeTab === tab.key }" @click="activeTab = tab.key">
         {{ tab.label }}
       </button>
     </div>
 
-    <!-- Overview Tab -->
+    <!-- Tab content regions - just wrapper divs for now, content will be filled in later tasks -->
     <div v-if="activeTab === 'overview'" class="tab-content">
-      <!-- Today summary -->
+      <!-- Task 2 will fill this -->
       <div class="section-card">
-        <div class="section-title">今日学习</div>
+        <div class="section-title">📊 今日学习</div>
         <div class="today-grid">
           <div class="today-stat">
-            <div class="stat-value">{{ dataStore.todayAnswered }}</div>
+            <div class="stat-value stat-gold">{{ dataStore.todayAnswered }}</div>
             <div class="stat-label">答题数</div>
           </div>
           <div class="today-stat">
-            <div class="stat-value" :style="{ color: dataStore.todayAccuracy >= 80 ? '#2ed573' : dataStore.todayAccuracy >= 60 ? '#ffd700' : '#ff4757' }">
-              {{ dataStore.todayAccuracy }}%
-            </div>
+            <div class="stat-value" :style="{ color: getAccuracyColor(dataStore.todayAccuracy) }">{{ dataStore.todayAccuracy }}%</div>
             <div class="stat-label">正确率</div>
           </div>
           <div class="today-stat">
-            <div class="stat-value">{{ formatTime(dataStore.todayPlayTime) }}</div>
+            <div class="stat-value stat-purple">{{ formatTime(dataStore.todayPlayTime) }}</div>
             <div class="stat-label">学习时长</div>
           </div>
         </div>
       </div>
-
-      <!-- Overall stats -->
-      <div class="section-card">
-        <div class="section-title">总体数据</div>
-        <div class="overall-grid">
-          <div class="overall-item">
-            <span class="ov-label">总答题</span>
-            <span class="ov-value">{{ dataStore.overallStats.totalAnswered }}</span>
-          </div>
-          <div class="overall-item">
-            <span class="ov-label">总正确率</span>
-            <span class="ov-value" :style="{ color: getAccuracyColor(dataStore.overallStats.overallAccuracy) }">
-              {{ dataStore.overallStats.overallAccuracy }}%
-            </span>
-          </div>
-          <div class="overall-item">
-            <span class="ov-label">错题数</span>
-            <span class="ov-value" style="color: #ff4757">{{ dataStore.overallStats.errorCount }}</span>
-          </div>
-          <div class="overall-item">
-            <span class="ov-label">排位赛</span>
-            <span class="ov-value">{{ dataStore.overallStats.pvpMatches }}场</span>
-          </div>
-          <div class="overall-item">
-            <span class="ov-label">排位胜率</span>
-            <span class="ov-value">{{ dataStore.overallStats.pvpWinRate }}%</span>
-          </div>
-          <div class="overall-item">
-            <span class="ov-label">等级</span>
-            <span class="ov-value">Lv.{{ dataStore.overallStats.level }}</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mode distribution -->
-      <div class="section-card" v-if="dataStore.modeDistribution.length > 0">
-        <div class="section-title">今日模式分布</div>
-        <div class="mode-bars">
-          <div v-for="mode in dataStore.modeDistribution" :key="mode.name" class="mode-bar-item">
-            <div class="mode-label">{{ mode.name }}</div>
-            <div class="mode-bar-track">
-              <div
-                class="mode-bar-fill"
-                :style="{
-                  width: Math.min(100, mode.value / Math.max(...dataStore.modeDistribution.map(m => m.value)) * 100) + '%',
-                  background: mode.color
-                }"
-              ></div>
-            </div>
-            <div class="mode-count">{{ mode.value }}</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Radar chart -->
-      <div class="section-card" v-if="radarData">
-        <div class="section-title">能力雷达</div>
-        <div class="radar-container">
-          <RadarChart :scores="radarData" :size="250" />
-        </div>
-      </div>
-
-      <!-- Heatmap -->
-      <div class="section-card">
-        <div class="section-title">近30天学习热力图</div>
-        <div class="heatmap">
-          <div
-            v-for="day in dataStore.last30Days"
-            :key="day.date"
-            class="heatmap-cell"
-            :style="{ background: getHeatmapColor(day.count) }"
-            :title="`${day.date}: ${day.count}题`"
-          ></div>
-        </div>
-        <div class="heatmap-legend">
-          <span class="legend-label">少</span>
-          <div class="legend-cell" style="background: rgba(255,255,255,0.05)"></div>
-          <div class="legend-cell" style="background: rgba(46, 213, 115, 0.2)"></div>
-          <div class="legend-cell" style="background: rgba(46, 213, 115, 0.4)"></div>
-          <div class="legend-cell" style="background: rgba(46, 213, 115, 0.6)"></div>
-          <div class="legend-cell" style="background: rgba(46, 213, 115, 0.9)"></div>
-          <span class="legend-label">多</span>
-        </div>
-      </div>
     </div>
 
-    <!-- Trend Tab -->
     <div v-if="activeTab === 'trend'" class="tab-content">
-      <div class="section-card">
-        <div class="section-title">近7天答题趋势</div>
-        <div class="chart-area">
-          <div class="bar-chart">
-            <div v-for="day in dataStore.weeklyTrend" :key="day.date" class="bar-column">
-              <div class="bar-value">{{ day.count > 0 ? day.count : '' }}</div>
-              <div class="bar" :style="{ height: (day.count > 0 ? Math.max(10, day.count / Math.max(...dataStore.weeklyTrend.map(d => d.count)) * 100) : 0) + '%' }"></div>
-              <div class="bar-label">{{ day.date }}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-card">
-        <div class="section-title">近7天正确率趋势</div>
-        <div class="chart-area">
-          <div class="line-chart">
-            <svg viewBox="0 0 300 120" class="trend-svg">
-              <!-- Grid lines -->
-              <line x1="30" y1="10" x2="30" y2="100" stroke="rgba(255,255,255,0.1)" />
-              <line x1="30" y1="100" x2="290" y2="100" stroke="rgba(255,255,255,0.1)" />
-              <line x1="30" y1="55" x2="290" y2="55" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
-              <!-- Labels -->
-              <text x="5" y="15" fill="rgba(255,255,255,0.4)" font-size="8">100</text>
-              <text x="10" y="58" fill="rgba(255,255,255,0.4)" font-size="8">50</text>
-              <text x="15" y="103" fill="rgba(255,255,255,0.4)" font-size="8">0</text>
-              <!-- Line -->
-              <polyline
-                :points="dataStore.weeklyTrend.map((d, i) => `${30 + i * 44},${100 - d.accuracy * 0.9}`).join(' ')"
-                fill="none"
-                stroke="#bb86fc"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <!-- Points -->
-              <circle
-                v-for="(d, i) in dataStore.weeklyTrend"
-                :key="i"
-                :cx="30 + i * 44"
-                :cy="100 - d.accuracy * 0.9"
-                r="4"
-                :fill="d.accuracy >= 80 ? '#2ed573' : d.accuracy >= 60 ? '#ffd700' : '#ff4757'"
-              />
-              <!-- X labels -->
-              <text
-                v-for="(d, i) in dataStore.weeklyTrend"
-                :key="'l' + i"
-                :x="30 + i * 44"
-                y="115"
-                fill="rgba(255,255,255,0.4)"
-                font-size="8"
-                text-anchor="middle"
-              >{{ d.date }}</text>
-            </svg>
-          </div>
-        </div>
-      </div>
+      <!-- Task 3 will fill this -->
     </div>
 
-    <!-- Knowledge Tab -->
     <div v-if="activeTab === 'knowledge'" class="tab-content">
-      <div class="section-card">
-        <div class="section-title">知识点掌握度</div>
-        <div v-if="dataStore.knowledgePointStats.length === 0" class="empty-hint">
-          暂无练习数据，完成练习后可查看各知识点掌握情况
-        </div>
-        <div v-else class="kp-list">
-          <div v-for="kp in dataStore.knowledgePointStats" :key="kp.id" class="kp-item">
-            <div class="kp-header">
-              <span class="kp-name">{{ getKpLabel(kp.id) }}</span>
-              <span class="kp-accuracy" :style="{ color: getAccuracyColor(kp.accuracy) }">
-                {{ kp.accuracy }}%
-              </span>
-            </div>
-            <div class="kp-bar">
-              <div
-                class="kp-bar-fill"
-                :style="{ width: kp.accuracy + '%', background: getAccuracyColor(kp.accuracy) }"
-              ></div>
-            </div>
-            <div class="kp-detail">
-              {{ kp.correct }}/{{ kp.total }} 题正确
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Task 4 will fill this -->
     </div>
 
-    <!-- Errors Tab -->
+    <div v-if="activeTab === 'weekly'" class="tab-content">
+      <!-- Task 5 will fill this -->
+    </div>
+
     <div v-if="activeTab === 'errors'" class="tab-content">
-      <div class="section-card">
-        <div class="section-title">错题统计</div>
-        <div class="error-summary">
-          <div class="error-stat">
-            <div class="error-value" style="color: #ff4757">{{ dataStore.overallStats.errorCount }}</div>
-            <div class="error-label">待复习错题</div>
-          </div>
-          <div class="error-stat">
-            <div class="error-value" style="color: #2ed573">
-              {{ Object.values(practiceStore.errorBook).filter(e => e.mastered).length }}
-            </div>
-            <div class="error-label">已掌握</div>
-          </div>
-        </div>
-
-        <div class="error-actions">
-          <button class="action-btn" @click="router.push('/errors')">
-            进入错题本
-          </button>
-        </div>
-      </div>
-
-      <div class="section-card">
-        <div class="section-title">错误分布</div>
-        <div v-if="dataStore.knowledgePointStats.length === 0" class="empty-hint">
-          暂无错误数据
-        </div>
-        <div v-else class="error-dist">
-          <div
-            v-for="kp in dataStore.knowledgePointStats.filter(k => k.total - k.correct > 0).slice(0, 8)"
-            :key="kp.id"
-            class="error-dist-item"
-          >
-            <span class="ed-name">{{ getKpLabel(kp.id) }}</span>
-            <span class="ed-count">{{ kp.total - k.correct }}题错</span>
-            <div class="ed-bar">
-              <div
-                class="ed-bar-fill"
-                :style="{ width: ((kp.total - kp.correct) / kp.total * 100) + '%' }"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Task 6 will fill this -->
     </div>
 
+    <!-- Bottom nav -->
     <nav class="bottom-nav">
       <router-link to="/" class="nav-item">
         <span class="nav-icon">🏠</span>
@@ -386,388 +191,109 @@ function goBack() {
 }
 
 .back-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 24px;
-  cursor: pointer;
+  background: none; border: none; color: #fff; font-size: 24px; cursor: pointer;
 }
 
 .header h1 {
-  flex: 1;
-  color: #fff;
-  font-size: 20px;
-  margin: 0;
+  flex: 1; color: #fff; font-size: 20px; font-weight: bold; margin: 0;
+}
+
+.header-level {
+  background: rgba(187, 134, 252, 0.15);
+  color: #bb86fc;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
 }
 
 .tabs {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   margin-bottom: 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .tab {
   flex: 1;
-  padding: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 60px;
+  padding: 8px 4px;
+  border: 1px solid rgba(255,255,255,0.1);
   border-radius: 8px;
-  background: transparent;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 13px;
+  background: rgba(255,255,255,0.02);
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.25s;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .tab.active {
   border-color: #bb86fc;
-  background: rgba(187, 134, 252, 0.1);
+  background: linear-gradient(135deg, rgba(187,134,252,0.15), rgba(98,0,234,0.1));
   color: #bb86fc;
+  box-shadow: 0 0 12px rgba(187,134,252,0.15);
 }
 
 .section-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 12px;
+  backdrop-filter: blur(10px);
 }
 
 .section-title {
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-/* Today grid */
+/* overview tab */
 .today-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 10px;
 }
 
 .today-stat {
   text-align: center;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
-  padding: 12px 8px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 10px;
+  padding: 14px 8px;
 }
 
 .stat-value {
-  color: #ffd700;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
+  transition: all 0.3s;
 }
+
+.stat-gold { color: #ffd700; }
+.stat-purple { color: #bb86fc; }
 
 .stat-label {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255,255,255,0.45);
   font-size: 11px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
-/* Overall grid */
-.overall-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.overall-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  padding: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
-}
-
-.ov-label {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 11px;
-}
-
-.ov-value {
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* Mode bars */
-.mode-bars {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.mode-bar-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.mode-label {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
-  width: 60px;
-}
-
-.mode-bar-track {
-  flex: 1;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.mode-bar-fill {
-  height: 100%;
-  border-radius: 4px;
-  transition: width 0.3s;
-}
-
-.mode-count {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 12px;
-  width: 30px;
-  text-align: right;
-}
-
-/* Radar */
-.radar-container {
-  display: flex;
-  justify-content: center;
-}
-
-/* Heatmap */
-.heatmap {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 3px;
-}
-
-.heatmap-cell {
-  aspect-ratio: 1;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.heatmap-legend {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 3px;
-  margin-top: 8px;
-}
-
-.legend-cell {
-  width: 12px;
-  height: 12px;
-  border-radius: 2px;
-}
-
-.legend-label {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 10px;
-}
-
-/* Bar chart */
-.chart-area {
-  padding: 8px 0;
-}
-
-.bar-chart {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  height: 150px;
-  gap: 8px;
-}
-
-.bar-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: flex-end;
-}
-
-.bar-value {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 10px;
-  margin-bottom: 2px;
-}
-
-.bar {
-  width: 100%;
-  background: linear-gradient(180deg, #bb86fc, #6200ea);
-  border-radius: 4px 4px 0 0;
-  min-height: 0;
-  transition: height 0.3s;
-}
-
-.bar-label {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 10px;
-  margin-top: 4px;
-}
-
-/* Line chart */
-.line-chart {
-  width: 100%;
-}
-
-.trend-svg {
-  width: 100%;
-  height: auto;
-}
-
-/* Knowledge points */
-.kp-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.kp-item {
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.kp-item:last-child {
-  border-bottom: none;
-}
-
-.kp-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4px;
-}
-
-.kp-name {
-  color: #fff;
-  font-size: 13px;
-}
-
-.kp-accuracy {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.kp-bar {
-  height: 6px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  overflow: hidden;
-  margin-bottom: 2px;
-}
-
-.kp-bar-fill {
-  height: 100%;
-  border-radius: 3px;
-  transition: width 0.3s;
-}
-
-.kp-detail {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 11px;
-}
-
-.empty-hint {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 13px;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Error stats */
-.error-summary {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.error-stat {
-  flex: 1;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
-  padding: 12px;
-}
-
-.error-value {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.error-label {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 12px;
-  margin-top: 4px;
-}
-
-.error-actions {
-  text-align: center;
-}
-
-.action-btn {
-  padding: 10px 24px;
-  border: 1px solid #bb86fc;
-  border-radius: 8px;
-  background: rgba(187, 134, 252, 0.1);
-  color: #bb86fc;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-/* Error distribution */
-.error-dist {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.error-dist-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.ed-name {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 12px;
-  width: 60px;
-}
-
-.ed-count {
-  color: #ff4757;
-  font-size: 11px;
-  width: 40px;
-}
-
-.ed-bar {
-  flex: 1;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.ed-bar-fill {
-  height: 100%;
-  background: #ff4757;
-  border-radius: 3px;
-}
-
+/* bottom nav */
 .bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   display: flex;
-  background: rgba(15, 25, 35, 0.95);
+  background: rgba(15,25,35,0.95);
   backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255,255,255,0.1);
   padding: 8px 0;
   max-width: 500px;
   margin: 0 auto;
@@ -780,10 +306,20 @@ function goBack() {
   align-items: center;
   gap: 4px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255,255,255,0.4);
   font-size: 10px;
 }
 
 .nav-item.active { color: #bb86fc; }
 .nav-icon { font-size: 20px; }
+
+/* tab transitions */
+.tab-content {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 </style>
