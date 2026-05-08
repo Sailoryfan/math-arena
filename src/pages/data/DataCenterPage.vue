@@ -113,10 +113,10 @@ function goBack() {
       </button>
     </div>
 
-    <!-- Tab content regions - just wrapper divs for now, content will be filled in later tasks -->
+    <!-- Tab content regions -->
     <div v-if="activeTab === 'overview'" class="tab-content">
-      <!-- Task 2 will fill this -->
-      <div class="section-card">
+      <!-- 1. 今日学习 -->
+      <div :class="['section-card', 'accent-card']">
         <div class="section-title">📊 今日学习</div>
         <div class="today-grid">
           <div class="today-stat">
@@ -131,6 +131,88 @@ function goBack() {
             <div class="stat-value stat-purple">{{ formatTime(dataStore.todayPlayTime) }}</div>
             <div class="stat-label">学习时长</div>
           </div>
+        </div>
+      </div>
+
+      <!-- 2. 总体数据 -->
+      <div class="section-card">
+        <div class="section-title">📈 总体数据</div>
+        <div class="overall-grid">
+          <div class="overall-item">
+            <span class="ov-label">总答题</span>
+            <span class="ov-value">{{ dataStore.overallStats.totalAnswered }}</span>
+          </div>
+          <div class="overall-item">
+            <span class="ov-label">总正确率</span>
+            <span class="ov-value" :style="{ color: getAccuracyColor(dataStore.overallStats.overallAccuracy) }">{{ dataStore.overallStats.overallAccuracy }}%</span>
+          </div>
+          <div class="overall-item">
+            <span class="ov-label">错题数</span>
+            <span class="ov-value" style="color:#ff4757">{{ dataStore.overallStats.errorCount }}</span>
+          </div>
+          <div class="overall-item">
+            <span class="ov-label">排位赛</span>
+            <span class="ov-value">{{ dataStore.overallStats.pvpMatches }}场</span>
+          </div>
+          <div class="overall-item">
+            <span class="ov-label">排位胜率</span>
+            <span class="ov-value" style="color:#ff6b35">{{ dataStore.overallStats.pvpWinRate }}%</span>
+          </div>
+          <div class="overall-item">
+            <span class="ov-label">经验值</span>
+            <span class="ov-value" style="color:#2ed573">{{ dataStore.overallStats.exp }}</span>
+          </div>
+          <div class="overall-item">
+            <span class="ov-label">金币</span>
+            <span class="ov-value" style="color:#ffd700">{{ dataStore.overallStats.gold }}</span>
+          </div>
+          <div class="overall-item">
+            <span class="ov-label">等级</span>
+            <span class="ov-value">Lv.{{ dataStore.overallStats.level }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. 能力雷达 -->
+      <div class="section-card" v-if="Object.keys(radarData).length > 0">
+        <div class="section-title">🎯 能力雷达</div>
+        <div class="radar-container">
+          <RadarChart :scores="radarData" :dimensions="radarDimensions" />
+        </div>
+        <div class="radar-legend">
+          <div v-for="dim in radarDimensions" :key="dim.key" class="radar-legend-item">
+            <span class="rl-dot"></span>
+            <span class="rl-label">{{ dim.label }}</span>
+            <span class="rl-value">{{ radarData[dim.key] || 0 }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. 模式分布 -->
+      <div class="section-card" v-if="dataStore.modeDistribution.length > 0">
+        <div class="section-title">🎮 模式分布</div>
+        <div class="mode-grid">
+          <div v-for="mode in dataStore.modeDistribution" :key="mode.name" class="mode-card" :style="{ borderColor: mode.color + '40', background: mode.color + '08' }">
+            <div class="mode-value" :style="{ color: mode.color }">{{ mode.value }}</div>
+            <div class="mode-name">{{ mode.name }}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. 热力图 -->
+      <div class="section-card">
+        <div class="section-title">🔥 学习热力图</div>
+        <div class="heatmap">
+          <div v-for="day in dataStore.last30Days" :key="day.date" class="heatmap-cell" :style="{ background: getHeatmapColor(day.count) }" :title="`${day.date}: ${day.count}题`"></div>
+        </div>
+        <div class="heatmap-legend">
+          <span class="legend-label">少</span>
+          <div class="legend-cell" style="background:rgba(255,255,255,0.05)"></div>
+          <div class="legend-cell" style="background:rgba(46,213,115,0.2)"></div>
+          <div class="legend-cell" style="background:rgba(46,213,115,0.4)"></div>
+          <div class="legend-cell" style="background:rgba(46,213,115,0.6)"></div>
+          <div class="legend-cell" style="background:rgba(46,213,115,0.9)"></div>
+          <span class="legend-label">多</span>
         </div>
       </div>
     </div>
@@ -321,5 +403,137 @@ function goBack() {
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* overview tab additions */
+.accent-card {
+  background: linear-gradient(135deg, rgba(187,134,252,0.12), rgba(98,0,234,0.06));
+  border-color: rgba(187,134,252,0.2);
+}
+
+.overall-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.overall-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 4px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+}
+
+.ov-label {
+  color: rgba(255,255,255,0.4);
+  font-size: 10px;
+}
+
+.ov-value {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Radar */
+.radar-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.radar-legend {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+}
+
+.radar-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+}
+
+.rl-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffd700;
+  flex-shrink: 0;
+}
+
+.rl-label {
+  color: rgba(255,255,255,0.6);
+  font-size: 11px;
+  flex: 1;
+}
+
+.rl-value {
+  color: #ffd700;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+/* Mode distribution */
+.mode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 8px;
+}
+
+.mode-card {
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.mode-value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mode-name {
+  color: rgba(255,255,255,0.5);
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+/* Heatmap */
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 3px;
+}
+
+.heatmap-cell {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.heatmap-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  margin-top: 8px;
+}
+
+.legend-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.legend-label {
+  color: rgba(255,255,255,0.4);
+  font-size: 10px;
 }
 </style>
